@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/RegistrarNotas"
+        android:textAllCaps="true">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/notaTxt"
+            android:hint="Nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamañoLetra">
+        </EditText>
+        <EditText
+            android:id="@+id/porcentajeTxt"
+            android:hint="Porcentaje%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamañoLetra">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/agragrBtn"
+            android:layout_width="match_parent"
+            android:text="@string/AgregarNota"
+            android:layout_height="@dimen/tamañoBoton"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamañoLetra">
+
+        </Button>
+        <Button
+            android:id="@+id/limpiarBtn"
+            android:layout_width="match_parent"
+            android:text="@string/Limpiar"
+            android:layout_weight="1"
+            android:layout_height="@dimen/tamañoBoton"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/tamañoLetra">
+
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:layout_width="match_parent"
+        android:background="@color/primary_light"
+        android:text="@string/subtitulo"
+        android:textSize="@dimen/tamañoLetra"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/padingBase"
+        android:paddingBottom="@dimen/padingBase"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+    <ListView
+        android:id="@+id/notasLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

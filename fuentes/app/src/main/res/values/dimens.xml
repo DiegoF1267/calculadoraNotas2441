@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopBase">20dp</dimen>
+    <dimen name="padingBase">15dp</dimen>
+    <dimen name="tamañoLetra">35sp</dimen>
+    <dimen name="tamañoBoton">50dp</dimen>
+</resources>
